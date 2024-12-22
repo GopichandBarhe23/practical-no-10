@@ -1,0 +1,152 @@
+// Variables
+$primary-color: #ff6347; // Tomato red
+$secondary-color: #2c3e50; // Dark gray
+$accent-color: #f39c12; // Golden yellow
+$font-stack: 'Arial', sans-serif;
+$spacing: 20px;
+
+// Mixin for Box Shadows
+@mixin box-shadow($x, $y, $blur, $color) {
+    box-shadow: $x $y $blur $color;
+}
+// Reset for the page
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $font-stack;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+}
+// Header Styling
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: $spacing;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo h1 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        li {
+            margin: 0 $spacing;  
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 5px;
+                
+                &:hover {
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+    }
+}
+// Hero Section
+#home .hero {
+    background: url('https://img.freepik.com/premium-vector/modern-restaurant-design-vibrant-yellow-background_1138841-20536.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: rgb(22, 18, 18);
+    padding: 100px 20px;
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
+// Menu Section
+#menu {
+    padding: $spacing;
+    background-color: white;
+    h2 {
+        text-align: center;
+        color: $primary-color;
+        font-size: 2.5rem;
+        margin-bottom: $spacing;
+    }
+    .menu-items {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .menu-item {
+            background-color: #fff;
+            padding: 1rem;
+            width: 30%;
+            text-align: center;
+            margin-bottom: $spacing;
+            border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            h3 {
+                font-size: 1.8rem;
+                color: $secondary-color;
+            }
+            .price {
+                font-size: 1.4rem;
+                font-weight: bold;
+                color: $accent-color;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+// Specials Section
+#specials {
+    padding: $spacing;
+    background-color: #ecf0f1;
+    h2 {
+        text-align: center;
+        color: $primary-color;
+        font-size: 2.5rem;
+        margin-bottom: $spacing;
+    }
+    .specials {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .special-item {
+            background-color: #fff;
+            padding: 1.5rem;
+            width: 45%;
+            margin-bottom: $spacing;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            h3 {
+                font-size: 1.8rem;
+                color: $secondary-color;
+            }
+            .price {
+                font-size: 1.4rem;
+                font-weight: bold;
+                color: $accent-color;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+// Footer Section
+footer {
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    p {
+        font-size: 1rem;
+    }
+    
+}

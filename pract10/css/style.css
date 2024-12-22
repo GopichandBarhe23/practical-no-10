@@ -1,0 +1,138 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #ff6347;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  margin: 0 20px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+}
+header nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+#home .hero {
+  background: url("https://img.freepik.com/premium-vector/modern-restaurant-design-vibrant-yellow-background_1138841-20536.jpg") no-repeat center center/cover;
+  text-align: center;
+  color: rgb(22, 18, 18);
+  padding: 100px 20px;
+}
+#home .hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+#home .hero p {
+  font-size: 1.5rem;
+}
+
+#menu {
+  padding: 20px;
+  background-color: white;
+}
+#menu h2 {
+  text-align: center;
+  color: #ff6347;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+#menu .menu-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#menu .menu-items .menu-item {
+  background-color: #fff;
+  padding: 1rem;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#menu .menu-items .menu-item h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+#menu .menu-items .menu-item .price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f39c12;
+  margin-top: 10px;
+}
+
+#specials {
+  padding: 20px;
+  background-color: #ecf0f1;
+}
+#specials h2 {
+  text-align: center;
+  color: #ff6347;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+#specials .specials {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#specials .specials .special-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  width: 45%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#specials .specials .special-item h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+#specials .specials .special-item .price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f39c12;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #ff6347;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer p {
+  font-size:  1rem;
+}/*# sourceMappingURL=style.css.map */
